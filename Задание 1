@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class задание1 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Введите значение a, y, t");
+        double a = in.nextDouble();
+        double y = in.nextDouble();
+        double t = in.nextDouble();
+        System.out.println("Введите значение x, Y, d");
+        double x = in.nextDouble();
+        double Y = in.nextDouble();
+        double d = in.nextDouble();
+
+        System.out.println("D="+D(a,y,t));
+        System.out.println("R="+R(x,Y,d));
+    }
+    public static double D(double a, double y, double t){
+        double a1;
+        a1=(pow(a,2)*7.8+3.52*t)/(log(a+2*y)+exp(y));
+        return a1;
+    }
+    public static double R(double x, double Y, double d ){
+        double a2, a3, a4;
+        a2 = (pow(cos(Y-pow(x,exp(1)*PI)),3) + pow(2,x)*d)/(exp(Y) + log(abs(pow(sin(x),2))) + 7.4*pow(d,-x));
+        return a2;
+    }
+}
