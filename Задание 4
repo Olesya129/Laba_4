@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class zadanie4 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите значение a, b, c");
+        double a, b, c, d;
+        a = in.nextDouble();
+        b = in.nextDouble();
+        c = in.nextDouble();
+        d = a;
+        a = b;
+        b = c;
+        c = d;
+        System.out.println("a="+a);
+        System.out.println("b="+b);
+        System.out.println("c="+c);
+    }
+}
