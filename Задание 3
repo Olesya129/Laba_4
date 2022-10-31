@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class zadanie3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите значение a, n");
+        double a = in.nextDouble();
+        double n = in.nextDouble();
+
+        System.out.println("R="+R(a, n));
+        System.out.println("r="+r(a, n));
+    }
+    public static double R(double a, double n ){
+        double a1;
+        a1=a/(2*abs(sin(180/n)));
+        return a1;
+
+        }
+    public static double r(double a, double n ){
+        double a1, a2;
+        a2=R(a, n);
+        a1=a2*abs(cos(180/n));
+        return a1;
+    }
+
