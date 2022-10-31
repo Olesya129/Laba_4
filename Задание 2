@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class zadanie2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите значение t, n");
+        double t = in.nextDouble();
+        double n = in.nextDouble();
+
+        System.out.println("t="+t1(t, n));
+    }
+    public static double t1(double t, double n) {
+        double a1;
+        a1 = ((n+1)*t)/(n-1);
+        return a1;
+    }
+}
